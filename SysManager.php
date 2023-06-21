@@ -209,7 +209,7 @@ foreach (scandir(($secretMode ? BASE_PATH_SF : BASE_PATH) . $path) as $object){
 
 if(file_exists(($secretMode ? BASE_PATH_SF : BASE_PATH) . $path . DS . 'readme.md') && file_exists('md-parser.php')){
     echo "<hr><h1>ReadMe:</h1>";
-    include 'md-parser.php'; //Download from https://github.com/Thennavan-Hex/upload_php
+    include 'md-parser.php'; //Download from https://github.com/Thennavan-Hex/upload_php.git
     
     $Parsedown = new Parsedown();
     $Parsedown->setSafeMode(true);
